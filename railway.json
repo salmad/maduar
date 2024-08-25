@@ -1,0 +1,11 @@
+{
+  "build": {
+    "services": [
+      {
+        "name": "web",
+        "buildCommand": "pip install -r requirements.txt",
+        "startCommand": "streamlit run streamlit_app.py --server.port $PORT --server.address 0.0.0.0"
+      }
+    ]
+  }
+}
