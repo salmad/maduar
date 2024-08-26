@@ -37,7 +37,7 @@ st.title("The app has 4 Tabs")
 
 # Create tabs
 tab1, tab2, tab3, tab4 = st.tabs(["Simple Examples" ,"Keyword Research",
-                                   "Competitor Research", "Text formatting"])
+                                   "Competitor Research", "Killer open ai functionality"])
 
 st.divider()
 
@@ -87,26 +87,20 @@ with tab3:
             st.warning("Please enter at least one keyword")
 
 with tab4:
-    st.header("Examples")
-    # header examples
-    st.title("examples")
-    st.write("# examples 2")
-    st.write("## examples 3")
-    st.write("### examples 4")
+    # st.header("Examples")
+    st.write("### Killer example: chatgpt")
+    st.write("i used markdown formatting for the previous")
+    with st.form("openai_form"):
+        st.write("Talk to chat gpt here")
+        user_message = st.text_input('Type here')
+        # what_user_said = st.chat_input('Say something to chat gpt')
+
+        # Every form must have a submit button.
+        submitted = st.form_submit_button("ask ai")
 
 
-
-
-
-# st.button(label='Play with openai')
-# st.write('I will use some openai functionality here')
-
-# what_user_said = st.chat_input('Say something to chat gpt')
-
-
-# system_prompt= 'be very funny through saying stupid things. fun is what love. soviet union is proud of you'
-# response = get_openai_response(what_user_said)
-
-# st.write(response)
-
-
+        if submitted:
+            system_prompt= 'be very funny through saying stupid things. fun is what love. soviet union is proud of you'
+            response = get_openai_response(system_prompt=system_prompt,user_prompt=user_message)
+            st.write(response)
+    
