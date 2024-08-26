@@ -37,7 +37,7 @@ with st.expander("Getting Started Guide"):
         This app is designed to let you do exactly that. It’s simple:
 
         1. **Write Your Python Code**: For that you have a document like this (streamlit) and fastapi.py with pre-built template.
-        Run "python fastapi_app.py" to see the landing page of the page.
+        Run "python fastapi_app.py" to see the landing page of the page. To get how fast api works launch the website with "/docs" or "/redoc". Documentation for your APIs will apear automatically as you write them.
 
         2. **Push to GitHub, Deploy Instantly**: Want to share your creation with the world? Just push your code to GitHub, 
         and boom—it’s deployed. No servers, no headaches. So you have to setup your github environment. Make sure Dr. Mad invited you to all necessary projects on github.
