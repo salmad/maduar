@@ -2,3 +2,6 @@ streamlit
 pandas
 openai
 python-dotenv
+fastapi
+uvicorn
+jinja2

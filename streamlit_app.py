@@ -2,6 +2,59 @@ import streamlit as st
 import pandas as pd
 from utils.openai_utils import get_openai_response
 
+# App Title
+st.title("Unlock Your Startup Potential")
+
+# Foldable section 1: Gifting Text
+with st.expander("A Special Gift Just for You"):
+    st.markdown(
+        """
+        **Хеллоу Даша,**
+
+        What if I told you that everything you’ve been struggling with around coding—designing fancy UIs, battling with deployment, feeling stuck—is all a complete waste of your time? Seriously, forget it. You don’t need any of that to launch your next big thing.
+        
+        **Here’s the ugly truth:** most people are breaking their backs learning skills they don’t need, and it’s keeping them stuck. But you’re about to bypass all of that.
+        
+        I’m giving you a gift that will allow you to create killer apps and launch them without ever touching a line of frontend code or figuring out deployment. How? Because this tool I’ve built for you does it all—effortlessly.
+
+        **Here’s why this matters:** Every minute you spend struggling with UI design or deployment is a minute you’re not spending on your genius. It’s time to unleash your true potential, using just the skills you already have.
+
+        **This isn’t just another tool**—it’s a revolution. You’re about to step into a world where you get to focus on what you do best (writing Python), and let everything else fall into place. No more tutorials, no more dead ends. Just pure, unfiltered creation.
+
+        **This is your unfair advantage**—a way to shortcut your way to startup success without the usual headaches. So, are you ready to dominate and have a blast doing it? Let’s make those ideas reality."
+          """
+    )
+
+# Foldable section 2: Getting Started Guide
+with st.expander("Getting Started Guide"):
+    st.markdown(
+        """
+        **Welcome to the future of app development, where your Python skills are the star of the show!**
+
+        Here’s the deal: building apps usually means dealing with a lot of stuff you don't care about—like designing user interfaces 
+        and figuring out how to deploy your app to the web. But why bother with all that when you can just focus on writing awesome Python code?
+
+        This app is designed to let you do exactly that. It’s simple:
+
+        1. **Write Your Python Code**: For that you have a document like this (streamlit) and fastapi.py with pre-built template.
+        Run "python fastapi_app.py" to see the landing page of the page.
+
+        2. **Push to GitHub, Deploy Instantly**: Want to share your creation with the world? Just push your code to GitHub, 
+        and boom—it’s deployed. No servers, no headaches. So you have to setup your github environment. Make sure Dr. Mad invited you to all necessary projects on github.
+        I found that you can use github's code spaces to code/test without having to download code locally.
+
+        3. Nothing. Just the two above.
+
+        This is the fastest, easiest way to turn your ideas into reality. Build that app, launch that startup, 
+        or just have a blast playing around with your own creations. And remember, the only limit is your imagination—so dream big and code with confidence!
+        """
+    )
+
+# Footer
+st.markdown("---")
+st.markdown("**Get started now and turn your Python skills into something extraordinary!**")
+
+
 # Function to generate dummy data for demonstration
 def generate_dummy_data(keyword):
     '''

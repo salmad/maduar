@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instant Coder App - Python Apps Deployment Made Stupidly Simple</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.2/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .hero-background {
+            background: url('https://www.freecodecamp.org/news/content/images/2021/06/w-qjCHPZbeXCQ-unsplash.jpg') no-repeat center center;
+            background-size: cover;
+            height: 80vh;
+        }
+        .text-shadow-strong {
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+        }
+        .text-white-strong {
+            color: rgba(255,255,255,0.95);
+        }
+        .sticky-cta {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+        .mobile-menu {
+            display: none;
+        }
+        @media (max-width: 768px) {
+            .desktop-menu {
+                display: none;
+            }
+            .mobile-menu {
+                display: block;
+            }
+        }
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0) translateX(-50%);
+            }
+            50% {
+                transform: translateY(-20px) translateX(-50%);
+            }
+        }
+        .animate-bounce {
+            animation: bounce 2s infinite;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+<!-- Navigation -->
+<nav class="bg-white py-4 shadow-md sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center px-4">
+        <a href="#" class="text-2xl font-bold text-gray-900">Instant Coder</a>
+        <ul class="desktop-menu flex space-x-4">
+            <li><a href="#features" class="text-gray-900">Features</a></li>
+            <li><a href="#how-it-works" class="text-gray-900">How It Works</a></li>
+            <li><a href="#testimonials" class="text-gray-900">Testimonials</a></li>
+            <li><a href="#signup" class="text-gray-900">Get Started</a></li>
+        </ul>
+        <div class="mobile-menu">
+            <button id="menu-toggle" class="text-gray-900">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div id="mobile-menu-items" class="hidden bg-white w-full">
+        <a href="#features" class="block py-2 px-4 text-gray-900">Features</a>
+        <a href="#how-it-works" class="block py-2 px-4 text-gray-900">How It Works</a>
+        <a href="#testimonials" class="block py-2 px-4 text-gray-900">Testimonials</a>
+        <a href="#signup" class="block py-2 px-4 text-gray-900">Get Started</a>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="hero-background h-screen flex items-center justify-center text-center flex-col">
+    Attention Dasha
+    <h1 class="text-4xl md:text-6xl text-strong mb-4">Instant Coder, Instant Results</h1>
+    <h3 class="text-xl md:text-2xl text-black-strong mb-8">Deploying Code Is Dead—Here’s How to Build, Test, and Launch Apps Faster Than Any Programmer Ever Could</h3>
+    <a href="#signup"
+       class="mt-8 px-8 py-3 bg-gray-900 text-white rounded-full hover:bg-gray-700 transition duration-300">Start Building Now</a>
+</header>
+
+<section class="my-12 p-6">
+    <div class="container mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-8">The Harsh Reality of Coding </h2>
+        <h3 class="text-2xl text-center mb-8">
+            Why It’s Stopping You from Building Your Dream Apps
+
+            <br>
+            
+        </h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h3 class="text-xl font-bold mb-2">Frustrating Deployment Nightmares</h3>
+                <p>Even if you manage to code your app, you’re not done. You’re left wrestling with deployment headaches—servers, setting up DBs, environments ...</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h3 class="text-xl font-bold mb-2">Tools you use are way too hard</h3>
+                <p> You still on AWS😁? Are you kidding? No comment, but I will give you a 700 page book to explain the "simple next steps" for AWS.</p>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h3 class="text-xl font-bold mb-2">Wasted time</h3>
+                <p>Instead of adding next piece of logic for your customer you are dealing with something that doesn't move the revenue numbers. Why?</p>
+            </div>
+          
+        </div>
+        If you still want to learn deployment, see our <a class="text-blue-600 underline hover:bg-violet-600"
+                                                   href="/blogpost?source=problem1">blogpost</a> that breaks down the process.
+    </div>
+
+    <div class="flex items-center justify-center text-center flex-col">
+        <a href="#signup" style="align:center"
+           class="mt-8 px-8 py-3 justify-center text-center bg-gray-900 text-white rounded-full hover:bg-gray-700 transition duration-300">Automate My Coding</a>
+    </div>
+</section>
+
+
+<!-- Features Section -->
+<section id="features" class="my-12 p-6">
+    <div class="container mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-8"> Have an Idea, but It Isn't an App Yet? </h2>
+        <h3 class="text-2xl text-center mb-8">Meet Instant Coder App (special from Mr. Mad)</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-lg shadow-lg p-6 ">
+                <img class="text-center" src="https://images.unsplash.com/photo-1560961911-ba7ef651a56c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGxlZ28lMjBibG9ja3xlbnwwfHwwfHx8MA%3D%3D" alt="LEGO" width="100%">
+
+                <h3 class="text-xl font-bold mb-2">Use Pre-Built Templates Like LEGO </h3>
+                
+                <p> Our platform provides you with powerful, pre-built templates and APIs that you can customize and expand.
+                     Stack them together to create your perfect app, without getting bogged down by tedious code.
+
+                </p>
+                
+            </div>
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <img class="text-center" src="https://plus.unsplash.com/premium_vector-1719990020640-4440ecfabd17?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dGVhbXxlbnwwfHwwfHx8MA%3D%3D" alt="LEGO" width="100%">
+                <h3 class="text-xl font-bold mb-2">Instructions and Lifetime Support</h3>
+                <p>Any questions? You will get an answer. </p>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <img class="text-center" src="https://images.unsplash.com/photo-1607706189992-eae578626c86?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZGVwbG95JTIwY29kZXxlbnwwfHwwfHx8MA%3D%3D" alt="LEGO" width="100%">
+                <h3 class="text-xl font-bold mb-2">Deployment Done for You</h3>
+                <p>Forget the endless setup and configuration headaches. Our platform handles deployment for you, so you can focus on what matters—your
+                     brilliant ideas and cutting-edge coding. Bring your A-game to development while we take care of the rest.</p>
+            </div>
+        </div>
+        <br>
+        Want to learn more? See our <a
+            class="text-blue-600 underline hover:bg-violet-600" href="/blogpost?source=value_prop">blogpost</a>.
+    </div>
+
+    <div class="flex items-center justify-center text-center flex-col">
+        <a href="#signup" style="align:center"
+           class="mt-8 px-8 py-3 justify-center text-center bg-gray-900 text-white rounded-full hover:bg-gray-700 transition duration-300">Try Instant Coder App Now</a>
+    </div>
+</section>
+
+
+<!-- How It Works Section -->
+<section id="how-it-works" class="my-12 p-6">
+    <div class="container mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-8">How It Works: Build, Test, and Deploy in 3 Steps</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="text-center">
+                <div class="bg-gray-900 text-white rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4">
+                    1
+                </div>
+                <h3 class="text-xl font-bold mb-2">Sign Up</h3>
+                <p>Start by creating your account <a href="#signup" class="text-blue-600 underline">here</a>. Or talk to Salim</p>
+            </div>
+            <div class="text-center">
+                <div class="bg-gray-900 text-white rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4">
+                    2
+                </div>
+                <h3 class="text-xl font-bold mb-2">Python instead of html</h3>
+                <p>Write in your python app the way you imagined it on web.</p>
+            </div>
+            <div class="text-center">
+                <div class="bg-gray-900 text-white rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4">
+                    3
+                </div>
+                <h3 class="text-xl font-bold mb-2">Deploy with a Click</h3>
+                <p>Deploy your app to the web instantly via github push 🤩. One click, and you’re live.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-8">What Our Users Are Saying</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="p-6">
+                <p class="italic">"Instant Coder revolutionized how I build and deploy projects. It's a game-changer for anyone with a busy schedule!"</p>
+                <p class="mt-4 font-bold">- Salim M., Fintech professional</p>
+            </div>
+            <div class="p-6">
+                <p class="italic">"I've tried coding before, but this app made everything so much easier. Highly recommend it to beginners."</p>
+                <p class="mt-4 font-bold">- Petr K., Trader</p>
+            </div>
+            <div class="p-6">
+                <p class="italic">"The perfect tool for consultants trying to build something. Fast, efficient, and easy to use. I can now focus on growing businesses."</p>
+                <p class="mt-4 font-bold">- Angelina K., Consultant</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section id="signup" class="my-12 p-6">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-4">Ready to Build Your Next Big Idea?</h2>
+        <p class="text-xl mb-8">Sign up today and get started with Instant Coder App. Your first project is on us!</p>
+        <a href="#signup"
+           class="mt-8 px-8 py-3 bg-gray-900 text-white rounded-full hover:bg-gray-700 transition duration-300">Get Started Now</a>
+    </div>
+</section>
+
+<!-- Sticky CTA -->
+<div class="sticky-cta animate-bounce">
+    <a href="#signup"
+       class="px-6 py-3 bg-gray-900 text-white rounded-full hover:bg-gray-700 transition duration-300">Sign Up Today!</a>
+</div>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-8">
+    <div class="container mx-auto text-center">
+        <p>&copy; 2024 Instant Coder App for Darin. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+        var menuItems = document.getElementById('mobile-menu-items');
+        menuItems.classList.toggle('hidden');
+    });
+</script>
+</body>
+</html>
