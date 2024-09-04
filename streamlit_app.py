@@ -39,7 +39,7 @@ with st.expander("Getting Started Guide"):
         
         \n1. **Setup dev environment in 1 click**: Go to your github repo https://github.com/salmad/maduar. Click on \"Code\" and got to "Code spaces". 
         And hit plus. You will be able to see and edit code in familiar VS Code editor.
-        Make sure Dr. Mad invited you to all necessary projects on github.
+        Make sure Dr. Mad invited you to all necessary projects on github. If you are reading this most likely your ```maduardar``` github account was invited.
         I found that you can use github's code spaces to code/test without having to download code locally.
         
         \n2. **Setup prod environment**: you will have railway.app access which is used for your deployment. But i hope you will rarely use it.
