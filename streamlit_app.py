@@ -43,6 +43,7 @@ with st.expander("Getting Started Guide"):
         I found that you can use github's code spaces to code/test without having to download code locally.
         
         \n2. **Setup prod environment**: you will have railway.app access which is used for your deployment. But i hope you will rarely use it.
+        You can use the domain, deployment services and OpenAI API for as long as you need (API pass word will be sent to your email in the form of .env file. Put it in your repo to execute code locally).
 
         \n3. **How to run apps**: 
         First install all packages using terminal: ```pip install -r requirements.txt```.
