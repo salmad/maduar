@@ -21,7 +21,9 @@ with st.expander("A Special Gift Just for You"):
 
         **This isn’t just another tool**—it’s a revolution. You’re about to step into a world where you get to focus on what you do best (writing Python), and let everything else fall into place. No more tutorials, no more dead ends. Just pure, unfiltered creation.
 
-        **This is your unfair advantage**—a way to shortcut your way to startup success without the usual headaches. So, are you ready to dominate and have a blast doing it? Let’s make those ideas reality."
+        **This is your unfair advantage**—a way to shortcut your way to startup success without the usual headaches. So, are you ready to dominate and have a blast doing it? Let’s make those ideas reality.
+
+        Happy birthday, sister. This is probably the most nerdy gift you have ever received.
           """
     )
 
@@ -30,22 +32,34 @@ with st.expander("Getting Started Guide"):
     st.markdown(
         """
         **Welcome to the future of app development, where your Python skills are the star of the show!**
-
-        Here’s the deal: building apps usually means dealing with a lot of stuff you don't care about—like designing user interfaces 
+        Here's the deal: building apps usually means dealing with a lot of stuff you don't care about—like designing user interfaces 
         and figuring out how to deploy your app to the web. But why bother with all that when you can just focus on writing awesome Python code?
-
-        This app is designed to let you do exactly that. It’s simple:
-
-        1. **Write Your Python Code**: For that you have a document like this (streamlit) and fastapi.py with pre-built template.
-        Run "python fastapi_app.py" to see the landing page of the page. To get how fast api works launch the website with "/docs" or "/redoc". Documentation for your APIs will apear automatically as you write them.
-
-        2. **Push to GitHub, Deploy Instantly**: Want to share your creation with the world? Just push your code to GitHub, 
-        and boom—it’s deployed. No servers, no headaches. So you have to setup your github environment. Make sure Dr. Mad invited you to all necessary projects on github.
+        
+        \nThis app (not just one) is designed to let you do exactly that. It's simple:
+        
+        \n1. **Setup dev environment in 1 click**: Go to your github repo https://github.com/salmad/maduar. Click on \"Code\" and got to "Code spaces". 
+        And hit plus. You will be able to see and edit code in familiar VS Code editor.
+        Make sure Dr. Mad invited you to all necessary projects on github.
         I found that you can use github's code spaces to code/test without having to download code locally.
+        
+        \n2. **Setup prod environment**: you will have railway.app access which is used for your deployment. But i hope you will rarely use it.
 
-        3. Nothing. Just the two above.
+        \n3. **How to run apps**: 
+        First install all packages using terminal: ```pip install -r requirements.txt```.
+        Next I created apps for you.
+            \n    3.1. One is **Streamlit** app can be run by typing the following command in terminal of the main folder: ```streamlit run streamlit_app.py```. Use streamlit for things like jupyter notebook, where your charts etc. will be deployed. Once you launch the command you will get an option to open the app in browser. This is not all, I created another app for you.
+            \n    3.2. Another one is for **custom or traditional API request**. Look at file called fastapi_app.py.
+            To run it, type ```python fastapi_app.py``` in your comand line and you can open another app in browser. Special bonus 🎁🤩🤑 is if you type "/landing_page" you will get a landing page. Change the text and it is yours.
 
-        This is the fastest, easiest way to turn your ideas into reality. Build that app, launch that startup, 
+        \n4. **Write Your Python Code**: For that you have a document like this (streamlit_app.py) and another file (fastapi_app.py) with pre-built template.
+        To get how fast api works launch the local website with ```/docs``` or ```/redoc```. Documentation for your APIs will apear automatically as you write them.
+
+        \n5. **Push to GitHub, Deploy Instantly**: Want to share your creation with the world? Just push your code to GitHub, 
+        and boom—it’s deployed. All in VS code editor. No servers, no headaches.  
+
+        \n Ok, that's it.
+
+        \nThis is the fastest, easiest way to turn your ideas into reality. Build that app, launch that startup, 
         or just have a blast playing around with your own creations. And remember, the only limit is your imagination—so dream big and code with confidence!
         """
     )
