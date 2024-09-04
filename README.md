@@ -1,10 +1,25 @@
-# 🎈 Blank app template
 
-A simple Streamlit app template for you to modify!
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+A place for Darin Maduar projects
 
-### How to run it on your own machine
+Project is deployed to Darin.Maduar.org - for Darin Maduar R&D lab, projects that can graduate to become something else
+
+Services used: github, railway.app, 
+
+
+### How to run the app
+Go to darin.maduar.org
+
+### How to deploy changes
+
+```
+git commit -m "commit message"
+git push
+```
+the git push command will deploy your app to darin.maduar.org. Details are in railway.app
+
+
+### How to run it locally (on your own machine)
 
 1. Install the requirements
 
